@@ -69,18 +69,18 @@ class User(Person):
 
     def setup_query_vocab(self,desired_vocab):
         for desire in desired_vocab:
-            self.query_voab[desire] =1
+            self.query_voab_index[desire] =1
 
     def generate_query_index(self):
         for pos,value in enumerate(self.s):
-                if(value) == 0:
+                if(value) == 1:
                     self.q_1[pos] = self.query_voab_index[pos]
                     self.q_2[pos] = self.query_voab_index[pos]
                 else:
                     if self.query_voab_index[pos] == 1:
                         rand = np.random.dirichlet(np.ones(2),size=1)
                         self.q_1[pos] = rand[0][0]
-                        self.q_2[pos] = rand[1][1]
+                        self.q_2[pos] = rand[0][1]
                     else:
                         self.q_1[pos] = np.random.randint(1,200)
                         self.q_2[pos] = -self.q_1[pos]
