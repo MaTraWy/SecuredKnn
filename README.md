@@ -126,7 +126,7 @@ $$ \{M_1^{-1}\cdot\vec{q'} ,M_2^{-1}\cdot\vec{q''}\} $$
 $$ \{M_1\cdot\vec{p'_i} , M_2\cdot\vec{p''_i}\}  \cdot \{M_1^{-1}\cdot\vec{q'}, M_2^{-1}\cdot\vec{q''}\}$$
 $$ \because  M_1 \cdot M_1^{-1}  = I$$
 $$\therefore \vec{p'_i} \cdot \vec{q'_i} + \vec{p''_i} \cdot \vec{q''} $$
-$$\because both index  splited  on  same  splitting vector \vec{S}$$
+$$\because both \: index \: splited \: on \: same \: splitting \:vector\: \vec{S}$$
 $$\therefore \vec{D_i} \cdot \vec{Q_i}$$
 
 
