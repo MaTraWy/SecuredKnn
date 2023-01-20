@@ -84,7 +84,7 @@ class Owner(Person):
         """
         this method calculate the splited two index for each document
         for each document:
-            1- loop over enumerated s, check if value of s at specific index i is 0
+            1- loop over enumerated
                 - if s[i] =0 then the two value of splited index at i is eqall to value of 
                     plain index at i
                 - if s[i] =1 then we check the value of plain index at i
@@ -148,7 +148,7 @@ class User(Person):
         """
         this method calculate the splited two index for query
 
-        loop over enumerated s, check if value of s at specific index i is 0
+        loop over enumerated s
                 - if s[i] = 1 then the two value of splited index at i is eqall to value of 
                     plain index at i
                 - if s[i] = 0 then we check the value of plain index at i
@@ -208,7 +208,7 @@ class Server:
            #print(key.txt,score_dic[key])
 
         for k, v in sorted(score_dic.items(), key=lambda item: item[1],reverse=True):
-            print(k.txt,v)
+            print(k.txt,np.round(v, 2))
 
 
 
