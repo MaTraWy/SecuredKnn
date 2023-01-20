@@ -7,14 +7,7 @@ A set of encrypted documents, each with two encrypted vocabulary vectors $ d', d
 
 <h4>Refrence Paper</4> <a href="https://ieeexplore.ieee.org/document/6674958">Privacy-Preserving Multi-Keyword Ranked Search over Encrypted Cloud Data</a> 
 
-![Capture.PNG](attachment:Capture.PNG)
-
-
-
-
  <h3><font color = "orange "> *__Steps in Nutshell__* 🍜: </font></h3>
-
-
 
 ### <u> First the owner should perform some operations on the documents. </u>
 
@@ -59,7 +52,7 @@ For each document $i$, check if value of $s$ at specific index $i$ equal the fol
 
 
 7. now encryption phase of two split indexes before sending them to the server, as the following
-$$ \{M_1\cdot\vec{p'_i}\;,\; M_2\cdot\vec{p''_i}\} $$
+$$ \{M_1\cdot\vec{p'_i},M_2\cdot\vec{p''_i}\} $$
 
 
 8. Finally for each document encrypt it using proper algorithm along with it's encrypted vocabulary index
@@ -102,7 +95,7 @@ $$ \{M_1\cdot\vec{p'_i}\;,\; M_2\cdot\vec{p''_i}\} $$
 
 
 7. now encryption phase of two splited indexes before sending them to the server, as the following
-$$ \{M_1^{-1}\cdot\vec{q'} \;,\;M_2^{-1}\cdot\vec{q''}\} $$
+$$ \{M_1^{-1}\cdot\vec{q'} ,M_2^{-1}\cdot\vec{q''}\} $$
 
 
 8. Finally, send the calculated encrypted query vocabulary index to the server.
