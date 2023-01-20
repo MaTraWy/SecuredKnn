@@ -1,11 +1,11 @@
 ## <font color="powderblue" >Secure Inner Product Computation ⌨</font>
 
 ### <font color ="Pink">Algorithm in NuteShell 📔: </font>
-A set of encrypted documents, each with two encrypted vocabulary vectors $ d', d'' $ that states which vocabulary exsists in this document, stored on a server such as a cloud provider. We will be able to do a multi keyword search using two encrypted vocabulary vectors  $ q', q'' $  on the server and return the matched result without exposing any information to a server about the document neither the query.
+A set of encrypted documents, each with two encrypted vocabulary vectors $d', d''$ that states which vocabulary exsists in this document, stored on a server such as a cloud provider. We will be able to do a multi keyword search using two encrypted vocabulary vectors  $q', q''$  on the server and return the matched result without exposing any information to a server about the document neither the query.
 
 <h4><font type ="italic" color ="Green">Code Author: Mahmoud Srewa  </font>👨 , PhD student at the University of Alabama 🏛 - Alsharif labs</h4>
 
-<h4>Refrence Paper</4> <a href="https://ieeexplore.ieee.org/document/6674958">Privacy-Preserving Multi-Keyword Ranked Search over Encrypted Cloud Data</a> 
+<h4>Refrence Paper</h4> <a href="https://ieeexplore.ieee.org/document/6674958">Privacy-Preserving Multi-Keyword Ranked Search over Encrypted Cloud Data</a> 
 
  <h3><font color = "orange "> *__Steps in Nutshell__* 🍜: </font></h3>
 
@@ -17,7 +17,7 @@ A set of encrypted documents, each with two encrypted vocabulary vectors $ d', d
 
 
 
-2. For each document $ d_i \; in \; \{d_1,d_2, \dots, d_k\}$, create a simple vocabulary vector $\vec{p_i}$ index.
+2. For each document $d_i \; in \; \{d_1,d_2, \dots, d_k\}$, create a simple vocabulary vector $\vec{p_i}$ index.
 
 
 
@@ -123,10 +123,10 @@ $$ \{M_1^{-1}\cdot\vec{q'} ,M_2^{-1}\cdot\vec{q''}\} $$
 6. the server do the dot product without knowing any information about the query neither the server
 
 
-$$ \{M_1\cdot\vec{p'_i} \; , \; M_2\cdot\vec{p''_i}\}  \cdot \{M_1^{-1}\cdot\vec{q'} \; , \; M_2^{-1}\cdot\vec{q''}\}$$
-$$ \because  \; M_1 \cdot M_1^{-1}  = I$$
-$$\therefore \; \vec{p'_i} \cdot \vec{q'_i} + \vec{p''_i} \cdot \vec{q''} $$
-$$\because \; both \; index \; splited \; on \; same \; splitting \; vector  \;\vec{S}$$
+$$ \{M_1\cdot\vec{p'_i} , M_2\cdot\vec{p''_i}\}  \cdot \{M_1^{-1}\cdot\vec{q'}, M_2^{-1}\cdot\vec{q''}\}$$
+$$ \because  M_1 \cdot M_1^{-1}  = I$$
+$$\therefore \vec{p'_i} \cdot \vec{q'_i} + \vec{p''_i} \cdot \vec{q''} $$
+$$\because both index  splited  on  same  splitting vector \vec{S}$$
 $$\therefore \vec{D_i} \cdot \vec{Q_i}$$
 
 
