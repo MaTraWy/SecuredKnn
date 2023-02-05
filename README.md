@@ -29,7 +29,7 @@ A set of encrypted documents, each with two encrypted vocabulary vectors $d', d'
 
 
 
-5. Create two random vectors of size $n$, $\vec{p'_i}$ and $\vec{p''_i}$, which will be used to split the plain index into them.
+5. Create two random vectors of size $n$ , $\vec{p'_i}$ and $\vec{p''_i}$, which will be used to split the plain index into them.
 
 
 
