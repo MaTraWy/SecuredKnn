@@ -52,7 +52,7 @@ For each document $i$, check if value of $s$ at specific index $i$ equal the fol
 
 
 7. now encryption phase of two split indexes before sending them to the server, as the following
-$$ \{M_1\cdot\vec{p'_i},M_2\cdot\vec{p''_i}\} $$
+$$\{M_1\cdot\vec{p'_i},M_2\cdot\vec{p''_i}\}$$
 
 
 8. Finally for each document encrypt it using proper algorithm along with it's encrypted vocabulary index
@@ -78,7 +78,7 @@ $$ \{M_1\cdot\vec{p'_i},M_2\cdot\vec{p''_i}\} $$
 
 
 
-5. Create two random vectors of size $n$, $\vec{q'_i}$ and $\vec{q''_i}$, which will be used to split the plain index into them.
+5. Create two random vectors of size $n$, $\vec{q'_i}$ and $\vec{q''_i}$ , which will be used to split the plain index into them.
 
 
 6. For query index, check if the value of $s$ at specific index $i$ equal the following<br>
@@ -95,7 +95,7 @@ $$ \{M_1\cdot\vec{p'_i},M_2\cdot\vec{p''_i}\} $$
 
 
 7. now encryption phase of two splited indexes before sending them to the server, as the following
-$$ \{M_1^{-1}\cdot\vec{q'} ,M_2^{-1}\cdot\vec{q''}\} $$
+$$\{M_1^{-1}\cdot\vec{q'} ,M_2^{-1}\cdot\vec{q''}\}$$
 
 
 8. Finally, send the calculated encrypted query vocabulary index to the server.
