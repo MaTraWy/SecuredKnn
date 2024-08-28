@@ -3,7 +3,7 @@
 ### <font color ="Pink">Algorithm in NuteShell 📔: </font>
 A set of encrypted documents, each with two encrypted vocabulary vectors $d', d''$ that states which vocabulary exsists in this document, stored on a server such as a cloud provider. We will be able to do a multi keyword search using two encrypted vocabulary vectors  $q', q''$  on the server and return the matched result without exposing any information to a server about the document neither the query.
 
-<h4><font type ="italic" color ="Green">Code Author: Mahmoud Srewa  </font>👨 , PhD student at the University of Alabama 🏛 - Alsharif labs</h4>
+<h4><font type ="italic" color ="Green">Code Author: Mahmoud Srewa  </font>👨</h4>
 
 <h4>Refrence Paper</h4> <a href="https://ieeexplore.ieee.org/document/6674958">Privacy-Preserving Multi-Keyword Ranked Search over Encrypted Cloud Data</a> 
 
